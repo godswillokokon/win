@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://unpkg.com/cloudinary-video-player/dist/cld-video-player.css" rel="stylesheet">
+  <title>Student Take Lesson</title>
+
+  <!-- Prevent the demo from appearing in search engines -->
+  <meta name="robots" content="noindex">
+
+  <!-- Perfect Scrollbar -->
+
+  <link type="text/css" href="assets/vendor/perfect-scrollbar.css" rel="stylesheet">
+
+  <!-- Fix Footer CSS -->
+  <link type="text/css" href="assets/vendor/fix-footer.css" rel="stylesheet">
+
+  <!-- Material Design Icons -->
+  <link type="text/css" href="assets/css/material-icons.css" rel="stylesheet">
+  <link type="text/css" href="assets/css/material-icons.rtl.css" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link type="text/css" href="assets/css/fontawesome.css" rel="stylesheet">
+  <link type="text/css" href="assets/css/fontawesome.rtl.css" rel="stylesheet">
+
+  <!-- Preloader -->
+  <link type="text/css" href="assets/css/preloader.css" rel="stylesheet">
+  <link type="text/css" href="assets/css/preloader.rtl.css" rel="stylesheet">
+
+  <!-- App CSS -->
+  <link type="text/css" href="assets/css/app.css" rel="stylesheet">
+  <link type="text/css" href="assets/css/app.rtl.css" rel="stylesheet">
+
+  <!-- cloudinary -->
+
+  <link href="https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body class="layout-navbar-mini-fixed-bottom">
+
+  
+  <!-- Header Layout -->
+  <div class="mdk-header-layout js-mdk-header-layout">
+
+    <!-- Header -->
+
+    <div id="header" class="mdk-header bg-dark js-mdk-header mb-0" data-effects="waterfall blend-background" data-fixed
+      data-condenses>
+      <div class="mdk-header__content">
+
+        <div class="navbar navbar-expand-sm navbar-dark bg-dark pr-0 pr-md-16pt" id="default-navbar" data-primary>
+
+          <!-- Navbar toggler -->
+          <button class="navbar-toggler navbar-toggler-right d-block d-md-none" type="button" data-toggle="sidebar">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+          </button>
+
+          <!-- Navbar Brand -->
+          <a href="index.html" class="navbar-brand">
+            <img class="navbar-brand-icon mr-0 mr-md-8pt" src="assets/images/logo/white-100%402x.png" width="30"
+              alt="Tutt Center">
+            <span class="d-none d-md-block">Tutt Center</span>
+          </a>
+
+
+          <!-- Main Navigation -->
+
+
+
+          
+
+          <!-- // END Main Navigation -->
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- // END Header -->
+
+    <!-- Header Layout Content -->
+    <div class="mdk-header-layout__content page-content ">
+
+
+
+      <div class="navbar navbar-list navbar-submenu navbar-light border-0 navbar-expand-sm"
+        style="white-space: nowrap;">
+        <div class="container flex-column flex-sm-row">
+          <nav class="nav navbar-nav navbar-list__item">
+            <div class="nav-item">
+              <div class="media flex-nowrap">
+                <div class="media-left mr-16pt">
+                  <a href="student-take-course.html"><img src="assets/images/paths/angular_64x64.png" width="40"
+                      alt="Angular" class="rounded"></a>
+                </div>
+                <div class="media-body">
+                  <span id="title" class="card-title text-body mb-0"></span>
+                  <p class="lh-1 d-flex align-items-center mb-0">
+
+                    <span id="tutor" class="text-50 small font-weight-bold mr-8pt"></span>
+                    <!-- <span class="text-50 small">Software Engineer </span> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <ul class="navbar-list__item nav navbar-nav ml-sm-auto align-items-center align-items-sm-end">
+            <li class="nav-item active ml-sm-16pt">
+              <a href="dang.html" class="nav-link">My Courses</a>
+            </li>
+            <!-- <li class="nav-item">
+                            <a href="#" class="nav-link">Next</a>
+                        </li> -->
+
+          </ul>
+        </div>
+      </div>
+      <div class="bg-gradient-primary pb-lg-64pt py-32pt">
+        <div class="container">
+          <nav class="course-nav">
+            <a href="#" data-toggle="tooltip" data-placement="bottom" data-title="Quick Overview"><span
+                class="material-icons text-primary">check_circle</span></a>
+            <a data-toggle="tooltip" data-placement="bottom" data-title="Basic Setup" class="active" href="#"><span
+                class="material-icons">account_circle</span></a>
+            <a data-toggle="tooltip" data-placement="bottom" data-title="Main Activity" href="#"><span
+                class="material-icons">play_circle_outline</span></a>
+            <a data-toggle="tooltip" data-placement="bottom" data-title="Summary & Conclusion" href="#"><span
+                class="material-icons">hourglass_empty</span></a>
+          </nav>
+          <div class="js-player embed-responsive embed-responsive-16by9 mb-32pt">
+            <div class="player embed-responsive-item">
+              <!-- <div class="player__content"> -->
+              <video id="docplayer" controls class="cld-video-player cld-fluid"></video>
+
+              <!-- <button id="play-prev" class="btn btn-default">Prev</button>
+                            <button id="play-next" class="btn btn-default">Next</button>
+                            
+                            <div id="source-data">
+                                <span id="public-id-placeholder"></span><br>
+                                <span id="source-url-placeholder"></span>
+                            </div>
+                            
+                            <div class="well" id="playlist-data">
+                            </div> -->
+
+              <!-- </div> -->
+              <div class="player__embed d-none">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-wrap align-items-end mb-16pt">
+            <h1 id="intro" class="text-white flex m-0"></h1>
+
+          </div>
+
+          <p id="description" class="hero__lead measure-hero-lead text-white-50 mb-24pt"></p>
+          <p id="timeframe" class="h1 text-white-50 font-weight-light m-0"></p>
+          <!-- <a href="#" class="btn btn-white">Resume lesson</a> -->
+        </div>
+      </div>
+
+      <div class="navbar navbar-expand-sm navbar-submenu navbar-light navbar-list p-0 m-0 align-items-center">
+        <div class="container page__container">
+          <ul class="nav navbar-nav flex align-items-sm-center">
+            <li class="nav-item navbar-list__item">
+              <div class="media align-items-center">
+                <span class="media-left mr-16pt">
+                  <img src="assets/images/people/50/guy-6.jpg" width="40" alt="avatar" class="rounded-circle">
+                </span>
+                <div class="media-body" id="tutorsec">
+                  <a class="card-title m-0"></a>
+                  <p class="text-50 lh-1 mb-0">Instructor</p>
+                </div>
+              </div>
+            </li>
+            <li id="date" class="nav-item navbar-list__item">
+
+            </li>
+            <li id="level" class="nav-item navbar-list__item">
+              <i class="material-icons text-muted icon--left">assessment</i>
+
+            </li>
+            <li class="nav-item ml-sm-auto text-sm-center flex-column navbar-list__item">
+              <!-- <div class="rating rating-24">
+                                <div class="rating__item"><i class="material-icons">star</i></div>
+                                <div class="rating__item"><i class="material-icons">star</i></div>
+                                <div class="rating__item"><i class="material-icons">star</i></div>
+                                <div class="rating__item"><i class="material-icons">star</i></div>
+                                <div class="rating__item"><i class="material-icons">star_border</i></div>
+                            </div> -->
+              <!-- <p class="lh-1 mb-0"><small class="text-muted">20 ratings</small></p> -->
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      
+
+    </div>
+    <!-- // END Header Layout Content -->
+
+  </div>
+  <!-- // END Header Layout -->
+
+  <!-- Modal -->
+
+  <button type="button" class="close" data-dismiss="modal">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase-functions.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC-1WdIpSC7e79uQgq1pzKFArp3y_ykyD4",
+      authDomain: "mini-udemy.firebaseapp.com",
+      databaseURL: "https://mini-udemy.firebaseio.com",
+      projectId: "mini-udemy",
+      storageBucket: "mini-udemy.appspot.com",
+      messagingSenderId: "658193953356"
+    };
+    firebase.initializeApp(config);
+    // make auth and firestore refrences
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+    const functions = firebase.functions();
+
+  </script>
+  <!-- <script src="scripts/auth.js"></script>
+  <script src="scripts/index.js"></script> -->
+  <script src="scripts/displayVideo.js"></script>
+
+  <!-- jQuery -->
+  <script src="assets/vendor/jquery.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="assets/vendor/popper.min.js"></script>
+  <script src="assets/vendor/bootstrap.min.js"></script>
+
+  <!-- Perfect Scrollbar -->
+  <script src="assets/vendor/perfect-scrollbar.min.js"></script>
+
+  <!-- DOM Factory -->
+  <script src="assets/vendor/dom-factory.js"></script>
+
+  <!-- MDK -->
+  <script src="assets/vendor/material-design-kit.js"></script>
+
+  <!-- Fix Footer -->
+  <script src="assets/vendor/fix-footer.js"></script>
+
+  <!-- Chart.js -->
+  <script src="assets/vendor/Chart.min.js"></script>
+
+  <!-- App JS -->
+  <script src="assets/js/app.js"></script>
+
+  <!-- Highlight.js -->
+  <script src="assets/js/hljs.js"></script>
+
+  <!-- App Settings (safe to remove) -->
+  <script src="assets/js/app-settings.js"></script>
+
+
+  <script src="https://widget.cloudinary.com/global/all.js"></script>
+  <!-- Cloudinary Video Player Dependencies -->
+  <script src="https://unpkg.com/cloudinary-core/cloudinary-core-shrinkwrap.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.js" type="text/javascript"></script>
+  <!-- 
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.3.0/cloudinary-core-shrinkwrap.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/cloudinary-video-player/dist/cld-video-player.js"></script> -->
+
+</body>
+
+
+</html>
