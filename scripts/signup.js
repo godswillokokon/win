@@ -11,6 +11,14 @@ auth.onAuthStateChanged(user => {
     console.log("user not logged in");
   }
 });
+function myFunction() {
+  var x = document.getElementById("signup-password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
 // signup
 const signupForm = document.querySelector("#signup-form");
 signupForm.addEventListener("submit", e => {
@@ -28,7 +36,7 @@ signupForm.addEventListener("submit", e => {
       firebase
         .auth()
         .currentUser.getIdToken(true)
-        .then(function(idToken) {
+        .then(function (idToken) {
           // console.log(idToken);
           // Send token to your backend via HTTPS
           // setupUI(cred);
@@ -40,7 +48,7 @@ signupForm.addEventListener("submit", e => {
               regNum: RegNum.value
             });
         })
-        .catch(function(error) {
+        .catch(function (error) {
           console.log(error);
         });
 
