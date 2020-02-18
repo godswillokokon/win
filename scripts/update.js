@@ -10,6 +10,7 @@ let date;
 let duration;
 let format;
 let tag;
+let emailAdd = sessionStorage.getItem("regnum");
 
 // console.log(Tutorusername);
 fileUpload.addEventListener("change", event => {
@@ -51,6 +52,7 @@ fileUpload.addEventListener("change", event => {
           firstName,
           lastName,
           level,
+          emailAdd,
           date
         }, alert("Proceed"))
         .catch(err => {
