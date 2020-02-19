@@ -29,6 +29,7 @@ db.collection("class")
 
 
     courseTitle = doc.data().courseTitle;
+    sessionStorage.setItem("couresT", courseTitle);
     courseDescription = doc.data().courseDescription;
     date = doc.data().date;
     duration = doc.data().duration;
