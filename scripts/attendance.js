@@ -36,7 +36,8 @@ const ResetupContent = data => {
 };
 let tutts = sessionStorage.getItem("adminUsername");
 db.collection("attendance")
-
+  .orderBy("courseTitle", "asc")
+  .where("tutor", "==", tutts)
   .onSnapshot(
     doc => {
       let data = doc.docs;

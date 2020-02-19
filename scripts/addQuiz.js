@@ -27,7 +27,7 @@ addQuizz.addEventListener("submit", e => {
       courseTitle,
       tutor
 
-    })
+    }, location.href = "instructor-quizzes.html")
     .catch(err => {
       console.error(err);
       alert("err : ", err)

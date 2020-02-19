@@ -5,6 +5,8 @@ const CLOUD_NAME = "ogcodes";
 // let imgPreview = document.getElementById("img-preview");
 let fileUpload = document.getElementById("file-upload");
 
+// let body = document.getElementById("whole").innerHTML;
+
 let Tutorusername = sessionStorage.getItem("adminUsername");
 let Tutoremail = sessionStorage.getItem("adminEmail");
 
@@ -29,6 +31,7 @@ fileUpload.addEventListener("change", event => {
         .then(res => {
             console.log(res);
             console.log(res.data.secure_url);
+
 
             // imgPreview.src = res.data.secure_url;
             date = res.data.created_at;
@@ -55,4 +58,4 @@ fileUpload.addEventListener("change", event => {
         .catch(err => {
             console.error(err);
         });
-});
+}); 
