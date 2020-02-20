@@ -18,7 +18,7 @@ const htmlUpImg = `
 upImg.innerHTML = htmlUpImg;
 
 const htmlImg = `
-         <img src="${photoS}" class="img-responsive" alt="image" style= "max-width:20%; height: 20%; object-fit: contain; "  /> 
+         <img src="${photoS}" class="img-responsive" alt="image" style= "max-width:20%;  object-fit: contain; "  /> 
       `;
 profileImg.innerHTML = htmlImg;
 
